@@ -20,8 +20,10 @@ client.on("message", message => {
         }
         if (Number.isFinite(number)) {
             if (Number.isInteger(number)) {
-                if (number % 2 == 0)
+                if (number % 2 == 0){
                     message.reply(`${number} is Even`)
+		    message.reply(`${number/2} is the half`)
+	    }
                 else
                     message.reply(`${number} is Odd`)
             } else {
